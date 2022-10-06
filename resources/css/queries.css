@@ -1,0 +1,857 @@
+:root{
+    --nude: #EEE3CB;
+    --brown : #D7C0AE;
+    --dark: #967E76;
+    --dark-brown: #744635;
+    --blue: #b4d0e6;
+    --strong-blue: #7e8f9e;
+    --black: #5e4f4b;
+    --strong-black: #312623;
+}
+
+
+/* Big tablet to 1200px; */
+@media only screen and (max-width : 1200px){
+    .navbar{
+        grid-template-columns: 2% auto auto;
+    }
+
+    .navbar-active{
+        grid-template-columns: 10% auto auto;
+   }
+
+   .navbar .btn:last-child{
+    margin-right: 1rem;
+}
+
+   .navbar-active .logo img{
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+    .navbar-active .search-bar{
+        width: 10rem;
+        margin-right: 2px;
+    }
+
+    .navbar-active .account .btn:last-child{
+        margin-right: 1rem;
+    }
+
+    .navbar-active .link-tabs a{
+        color: var(--black);
+        text-shadow: none;
+    }
+
+    .navbar-active .link-tabs a::after{
+        background-color: var(--black);
+    }
+
+    .link-tabs a{
+        font-size: 21px;
+        color: var(--brown);
+        text-shadow: 1px 1px 3px black;
+    }
+
+    .link-tabs a:last-child{
+        margin-right: 1rem;
+    }
+
+    .link-tabs a::after{
+        background-color: var(--brown);
+    }
+
+    .logo img{
+        top: 5rem;
+        left: 1rem;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    header{
+        height: 120vh;
+    }
+
+    .slider-btns{
+        right: 13rem;
+        bottom: -5rem;
+        
+    }
+
+    .menu-section{
+        padding: 5rem 0;
+    }
+
+    .menu{
+        grid-template-columns: auto auto;
+    }
+    
+    .food-container{
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .food-card h2::after{
+        bottom: 11rem;
+        left: 2rem;
+    }
+
+    .food-card:hover h2::after{
+        width: 13rem;
+    }
+
+    .food-card h3::after{
+        bottom: 7.5rem;
+        left: 2rem;
+    }
+
+    .food-card .btns .btn{
+        text-align: center;
+    }
+
+    .review-section{
+        height: 100vh;
+        padding: 0;
+        justify-content: flex-start;
+        
+    }
+
+    .review-section h1{
+        margin-top: 3rem;
+    
+    }
+
+    .review-dashboard{
+        margin-top: 15rem;
+    }
+
+    .review-card img{
+        top: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .review-card:hover img{
+        width: 8rem;
+        height: 8rem;
+        top: -6rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .review-card h2{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .review-card h3{
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .rating{
+        margin-right: 0rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .logo-footer img{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .contact-detail{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .social-detail{
+        width: 60%;
+        font-size: 2rem;
+    }
+
+    .contact-form{
+        width: 85%;
+    }
+
+    .contact-form input{
+        padding: 0 1rem;
+        margin-top: 1.2rem;
+        height: 2rem;    
+    }
+
+    .contact-form textarea{
+        margin-top: 1.2rem;
+        height: 8rem;
+        padding: 1rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .send-btn{
+        right: -2rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .send-btn h3{
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Small tablet to big tablet from 768x to 1023px */
+@media only screen and (max-width:1023px){
+    .link-tabs a{
+        width: 20%;
+        font-size: 22px;
+        font-weight: 1000;
+    }
+
+    .link-tabs a::after{
+        top: 3rem;
+        background-color: var(--brown);
+    }
+
+    .logo img{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .heading{
+        margin-left: 7rem;
+    }
+
+    .heading .btns{
+        margin-top: 1rem;
+    }
+
+    .heading .btns .btn{
+        font-size: 1.1rem;
+    }
+
+    .infor-dashboard{
+        height: 25rem;
+        padding: 0;
+    }
+
+    .infor-detail{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .infor-detail h2{
+        font-size: 1rem;
+    }
+
+    .infor-detail:hover i{
+        font-size: 3rem;
+        color: var(--nude);
+    }
+
+    .food-container{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .food-card:hover h2::after{
+        width: 11rem;
+    }
+
+    .food-card h3::after{
+        bottom: 7.5rem;
+        left: 2rem;
+    }
+
+    .review-section{
+        height: 155vh;
+    }
+
+    .review-dashboard{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-card{
+        margin-top: 2rem;
+    }
+
+    .review-card img{
+        top: -3rem;
+        left: 90%;
+    }
+
+    .review-card:hover img{
+        width: 8rem;
+        height: 8rem;
+        top: -4rem;
+        left: 90%;
+    }
+
+    .review-card p{
+        margin-top: 1rem;
+    }
+
+    .rating{
+        margin-right: 0rem;
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .contact-dashboard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-block{
+        padding: 5rem;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-footer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-detail{
+        margin-top: 2rem;
+        width: 70%;
+        line-height: 2.2rem;
+        font-size: 1rem;
+    }
+
+    .social-detail{
+        width: 40%;
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .contact-block:last-child{
+        height: 60vh;
+        position: relative;
+    }
+
+    .contact-form{
+        margin-top: 5rem;
+        position: absolute;
+        top:-1.5rem;
+        left: 0.8rem;
+        width: 100%;
+        height: 22rem;
+        justify-content: center;
+        align-items: flex-start;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+        padding-left: 2.5rem;
+    }
+
+    .send-btn{
+        bottom: 1.5rem;
+        right: 2rem;
+    }
+
+    .contact-form input{
+        width: 80%;
+    }
+    .contact-form textarea{
+        width: 80%;
+        font-size: 1rem;
+    }
+    
+    
+
+}
+ 
+/* Small phones to small tablets */
+@media only screen and (max-width: 767px){
+    .link-tabs{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        order: 2;
+    }
+
+    .logo img{
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: none;
+    }
+    
+    .logo-mobile{
+        display: inline-block;
+    }
+
+    .navbar-btn{
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: white;
+        border: 3px solid var(--black);
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 20;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .open-icon{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        font-size: 2rem;
+        transition: all .7s;
+        transform: translateX(-50%) translateY(-50%);
+        color: var(--dark-brown);
+    }
+
+    .cancel-icon{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        font-size: 2.5rem;
+        transition: all .7s;
+        transform: translateX(-50%) translateY(100%);
+        color: var(--dark-brown);
+    }
+
+
+    #menu-box:checked ~ .navbar-mobile{
+        transform: translateX(0%);
+    }
+
+    #menu-box:checked ~ .navbar-btn .open-icon{
+        transform: translateX(-50%) translateY(100%);
+    }
+
+    #menu-box:checked ~ .navbar-btn .cancel-icon{
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+
+    .link-tabs a:last-child{
+        margin-right: 0rem;
+    }
+    
+    .link-tabs a{
+        width: 100%;
+        text-align: center;
+        height: 5rem;
+        color: var(--black);
+        text-shadow: none;
+        font-size: 2rem;
+    }
+
+    .link-tabs a:after{
+        background-color: var(--black);
+    }
+
+    .account{
+        margin-top: 0rem;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-box{
+        width: 100%;
+    }
+
+    .search-icon{
+        margin-left: 2rem;
+        color: var(--black);
+        font-size: 2rem;
+    }
+
+    .search-bar{
+        margin-left: 1rem;
+        width: 80%;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .account .btns{
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0rem;
+        padding: 0 0.8rem;
+    }
+
+    .account .btns .btn{
+        font-size: 1.5rem;
+        padding: 0.8rem 5rem;
+        margin: 0;
+    }
+
+    .account .btns .btn:last-child{
+        margin-right: 0rem;
+    }
+    
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 190vh;
+    }
+
+    .left-header{
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    .heading{
+        margin-top: 0rem;
+        margin-left: 0;
+    }
+
+    .right-header .background{
+        right: 50%;
+        transform: translateX(50%);
+        width: 82%;
+        height: 210vh;
+    }
+    .slider{
+        left: 2rem;
+    }
+
+    .slide{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .slide img{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    #radio-btn1:checked ~ .sliding{
+        margin-left: 0;
+    }
+    
+    #radio-btn2:checked ~ .sliding{
+        margin-left: -85%;
+    }
+    #radio-btn3:checked ~ .sliding{
+        margin-left: -170%;
+    }
+
+    .heading h2{
+        color: var(--nude);
+    }
+
+    .heading span{
+        font-size: 1.8rem;
+        color: var(--blue);
+    }
+
+    .infor-dashboard{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        height: 100vh;
+        padding: 5rem 0;
+    }
+
+    .infor-block{
+        padding: 0;
+    }
+
+    .infor-detail{
+        
+        padding: 5rem 5rem;
+        height: 0rem;
+    }
+
+    .infor-detail h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .infor-detail p{
+        font-size: 0.9rem;
+    }
+
+    .infor-block:nth-child(2):after{
+        display: none;
+    }
+    
+    .infor-block:last-child::before{
+        display: none;
+    }
+
+    .menu{
+        grid-template-columns: auto;
+    }
+
+    .food-container{
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .food-card h2::after{
+        bottom: 9.8rem;
+        left: 2rem;
+    }
+
+    .food-card:hover h2::after{
+        width: 17rem;
+    }
+
+    .food-card h3::after{
+        bottom: 6.5rem;
+        left: 2rem;
+        width: 17.5rem;
+    }
+
+    .review-card{
+        width: 100%;
+    }
+
+    .review-block{
+        margin-top: 2rem;
+    }
+
+    footer{
+        margin-top: 8rem;
+    }
+
+    .contact-block{
+        padding: 2rem;
+        height: 25vh;
+    }
+
+    .contact-detail{
+        width: 100%;
+    }
+
+    .send-btn{
+        bottom: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .contact-form input{
+        width: 70%;
+    }
+    .contact-form textarea{
+        width: 70%;
+        font-size: 1rem;
+    }
+
+}
+ 
+/* Small phones from 0 to 480px; */
+@media only screen and (max-width: 480px){
+    html{
+        font-size: 18px;
+    }
+
+    .heading{
+        margin-top: 10rem;
+        margin-left: 2rem;
+        width: 80%;
+    }
+
+    .heading span{
+        font-size: 1.5rem;        
+    }
+
+    .heading h1{
+        font-size: 7rem;        
+    }
+
+    .heading h2{
+        font-size: 1.8rem;        
+    }
+
+    .logo-mobile{
+        width: 10rem;
+        height: 10rem;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .search-bar{
+        width: 70%;
+    }
+
+    .account .btns .btn{
+        width: 45%;
+        text-align: center;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .navbar-mobile{
+        padding: 10rem 0;
+    }
+    
+    header{
+        height: 160vh;
+
+    }
+    .heading .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .heading .btn{
+        width: 80%;
+        text-align: center;
+    }
+
+    .heading .btns .btn:first-child{
+        margin-right: 0.5rem;
+    }
+
+    .slider{
+        left: 5.7rem;
+    }
+
+    .slide{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .slide img{
+        width: 23rem;
+        height: 23rem;
+    }
+
+    #radio-btn1:checked ~ .sliding{
+        margin-left: 0;
+    }
+    
+    #radio-btn2:checked ~ .sliding{
+        margin-left: -65%;
+    }
+    #radio-btn3:checked ~ .sliding{
+        margin-left: -170%;
+    }
+    
+    .slider-btns{
+        position: absolute;
+        right: 55%;
+        bottom: 1rem;
+    }
+
+    section{
+        margin: 0 0;
+    }
+    
+    .infor-detail{
+        padding: 0rem 2rem;
+        height: 0rem;
+    }
+
+    .infor-detail h2{
+        font-size: 1.5rem;
+    }
+
+    .infor-detail p{
+        font-size: 1.1rem;
+    }
+
+    .food-card{
+        width: 80%;
+    }
+
+    .food-container{
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .food-card:hover h2::after{
+        width: 15rem;
+    }
+
+    .food-card h3::after{
+        width: 15rem;
+    }
+
+    .review-block{
+        margin-top: 4rem;
+    }
+
+    .review-card{
+        width: 90%;
+    }
+
+    .review-card h2{
+        width: 80%;
+        align-self: start;
+    }
+    
+    .contact-detail{
+        margin: 0;
+    }
+
+    .social-detail{
+        margin: 0;
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+
+
+    .contact-form{
+        height: 27rem;
+        padding-bottom: 6rem;
+    }
+
+    .send-btn{
+        bottom: 1.5rem;
+        right: 50%;
+        transform: translateX(50%
+        );
+    }
+
+    .contact-form input{
+        width: 85%;
+    }
+    .contact-form textarea{
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    .contact-block:last-child{
+        height: 65vh;
+        position: relative;
+    }
+
+}
