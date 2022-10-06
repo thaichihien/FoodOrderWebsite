@@ -6,7 +6,7 @@
 
 html{
     font-family: 'Inter Tight', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
@@ -53,7 +53,7 @@ body{
 
 
 .navbar{
-    
+
     position: fixed;
     top: 0;
     width: 100%;
