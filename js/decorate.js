@@ -110,4 +110,4 @@ function removeClasses(className,classRemove){
 }
 
 
-export {mobile}
+// export {mobile}
