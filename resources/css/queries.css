@@ -97,19 +97,13 @@
         height: 14rem;
     }
 
-    .food-card h2::after{
-        bottom: 11rem;
-        left: 2rem;
-    }
+    
 
     .food-card:hover h2::after{
         width: 13rem;
     }
 
-    .food-card h3::after{
-        bottom: 7.5rem;
-        left: 2rem;
-    }
+
 
     .food-card .btns .btn{
         text-align: center;
@@ -265,13 +259,9 @@
         width: 11rem;
     }
 
-    .food-card h3::after{
-        bottom: 7.5rem;
-        left: 2rem;
-    }
 
     .review-section{
-        height: 155vh;
+        height: auto;
     }
 
     .review-dashboard{
@@ -308,6 +298,8 @@
 
     footer{
         height: auto;
+        padding-bottom: 10rem;
+        padding-top: 2rem;
     }
 
     .contact-dashboard{
@@ -318,9 +310,9 @@
     }
 
     .contact-block{
-        padding: 5rem;
+        padding: 1rem;
         width: 100%;
-        height: 30vh;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -335,7 +327,7 @@
     }
 
     .contact-detail{
-        margin-top: 2rem;
+        margin-top: 3rem;
         width: 70%;
         line-height: 2.2rem;
         font-size: 1rem;
@@ -344,18 +336,19 @@
     .social-detail{
         width: 40%;
         margin-top: 1.5rem;
+        margin-bottom: 2rem;
         font-size: 2rem;
     }
 
     .contact-block:last-child{
-        height: 60vh;
+        padding: 0rem;
         position: relative;
+        margin: 0;
     }
 
     .contact-form{
-        margin-top: 5rem;
-        position: absolute;
-        top:-1.5rem;
+        margin-top: 0rem;
+        top: 0rem;
         left: 0.8rem;
         width: 100%;
         height: 22rem;
@@ -502,7 +495,7 @@
         margin-top: 2rem;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-left: 0rem;
         padding: 0 0.8rem;
     }
@@ -523,17 +516,25 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 190vh;
+        height: auto;
+        padding: 5rem 0;
     }
 
     .left-header{
         width: 100%;
-        padding-top: 5rem;
+        height: auto;
+        padding: 5rem 0;
     }
 
     .heading{
         margin-top: 0rem;
         margin-left: 0;
+    }
+
+    .right-header{
+        width: 100%;
+        padding-bottom: 8rem;
+        height: auto;
     }
 
     .right-header .background{
@@ -543,7 +544,7 @@
         height: 210vh;
     }
     .slider{
-        left: 2rem;
+        margin-left: 2rem;        
     }
 
     .slide{
@@ -619,24 +620,15 @@
         height: 18rem;
     } */
 
-    .food-card h2::after{
-        bottom: 9.8rem;
-        left: 2rem;
-    }
+    
 
     .food-card:hover h2::after{
-        width: 17rem;
+        width: 100%;
     }
 
-    .food-card h3::after{
-        bottom: 6.5rem;
-        left: 2rem;
-        width: 17.5rem;
-    }
 
     .review-section{
         height: auto;
-        border: 1px solid red;
     }
 
     .review-card{
@@ -650,12 +642,16 @@
     footer{
         margin-top: 8rem;
         height: auto;
-        padding-bottom: 6rem;
+        padding-bottom: 5rem;
     }
 
     .contact-block{
         padding: 2rem;
-        height: 25vh;
+        height: auto;
+    }
+
+    .contact-block:last-child{
+        height: 40vh;
     }
 
     .contact-detail{
@@ -674,6 +670,7 @@
         width: 70%;
         font-size: 1rem;
     }
+
 
 }
  
@@ -709,8 +706,12 @@
         transform: translateX(-50%);
     }
 
+    .search-box{
+        padding-right: 1rem;
+    }
 
     .search-bar{
+        margin-right: 0;
         width: 70%;
     }
 
@@ -718,7 +719,7 @@
         width: 45%;
         text-align: center;
         padding: 1rem 2rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .navbar-mobile{
@@ -747,7 +748,8 @@
     }
 
     .slider{
-        left: 5.7rem;
+        margin-left: 0;
+        left: 0rem;
     }
 
     .slide{
@@ -773,7 +775,7 @@
     
     .slider-btns{
         position: absolute;
-        right: 55%;
+        right: 30%;
         bottom: 1rem;
     }
 
@@ -803,12 +805,14 @@
         height: 14rem;
     } */
 
+    
+
     .food-card:hover h2::after{
-        width: 15rem;
+        width: 100%;
     }
 
     .food-card h3::after{
-        width: 15rem;
+        width: 80%;
     }
 
     .review-block{
@@ -823,6 +827,10 @@
         width: 80%;
         align-self: start;
     }
+
+    .rating{
+        width: 100%;
+    }
     
     .contact-detail{
         margin: 0;
@@ -832,8 +840,13 @@
         margin: 0;
         margin-top: 2rem;
         width: 80%;
+        margin-bottom: 0rem;
     }
 
+    
+    footer{
+        padding-bottom: 7rem;
+    }
 
 
     .contact-form{
@@ -856,8 +869,10 @@
         font-size: 1rem;
     }
 
+
+
     .contact-block:last-child{
-        height: 65vh;
+        height: 50vh;
         position: relative;
     }
 
