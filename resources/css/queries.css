@@ -634,6 +634,11 @@
         width: 17.5rem;
     }
 
+    .review-section{
+        height: auto;
+        border: 1px solid red;
+    }
+
     .review-card{
         width: 100%;
     }
@@ -644,6 +649,8 @@
 
     footer{
         margin-top: 8rem;
+        height: auto;
+        padding-bottom: 6rem;
     }
 
     .contact-block{

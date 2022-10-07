@@ -69,7 +69,7 @@ body{
 
 .navbar-active{
      background-color: var(--brown);
-     grid-template-columns: 30% auto 40%;
+     grid-template-columns: 20% auto 50%;
 }
 
 .logo{
@@ -93,7 +93,7 @@ body{
 .navbar-active .logo img{
     position: absolute;
     top: 0.5rem;
-    left: 10rem;
+    left: 5rem;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;

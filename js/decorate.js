@@ -63,7 +63,6 @@ if(document.body.clientWidth < 767){
 
 window.onresize = () =>{
     if(document.body.clientWidth < 767){
-        
         mobile();
     }else{
         navbar.classList.add('navbar')
@@ -77,23 +76,21 @@ window.onresize = () =>{
 
 
 
+if(playAnimation){
+    window.onscroll = () =>{
+        //console.log(document.documentElement.scrollTop)
+        if(document.body.scrollTop >limitNavbar || document.documentElement.scrollTop > limitNavbar){
+            navbar.classList.add('navbar-active')
+        }
+        else{
+            navbar.classList.remove('navbar-active')
+        }
 
-window.onscroll = () =>{
-    //console.log(document.documentElement.scrollTop)
-    if(document.body.scrollTop >limitNavbar || document.documentElement.scrollTop > limitNavbar){
-        navbar.classList.add('navbar-active')
-    }
-    else{
-        navbar.classList.remove('navbar-active')
-    }
-
-    if(playAnimation){
-        animationClasses('.infor-detail','fromBottom',inforSection,'hidden')
-        animationClasses('.review-card','fromLeft',reviewSection,'hidden')
         
+            animationClasses('.infor-detail','fromBottom',inforSection,'hidden')
+            animationClasses('.review-card','fromLeft',reviewSection,'hidden')
+
     }
-
-
 }
 
 function animationClasses(className,inAnimation,ypoint,hidden){
