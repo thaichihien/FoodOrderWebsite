@@ -20,9 +20,6 @@
         grid-template-columns: 10% auto auto;
    }
 
-   .navbar .btn:last-child{
-    margin-right: 1rem;
-}
 
    .navbar-active .logo img{
         position: absolute;
@@ -40,9 +37,6 @@
         margin-right: 2px;
     }
 
-    .navbar-active .account .btn:last-child{
-        margin-right: 1rem;
-    }
 
     .navbar-active .link-tabs a{
         color: var(--black);
@@ -57,10 +51,6 @@
         font-size: 21px;
         color: var(--brown);
         text-shadow: 1px 1px 3px black;
-    }
-
-    .link-tabs a:last-child{
-        margin-right: 1rem;
     }
 
     .link-tabs a::after{
@@ -203,9 +193,17 @@
 
 /* Small tablet to big tablet from 768x to 1023px */
 @media only screen and (max-width:1023px){
+    .navbar{
+        grid-template-columns: 1% auto 50%;
+    }
+    
+    .navbar-active{
+        grid-template-columns: 10% auto 55%;
+   }
+
     .link-tabs a{
         width: 20%;
-        font-size: 22px;
+        font-size: 0.9rem;
         font-weight: 1000;
     }
 
@@ -214,9 +212,65 @@
         background-color: var(--brown);
     }
 
+    .search-box{
+        width: 40%;
+    }
+
+    .search-bar{
+        width: 70%;
+        margin-right: 0;
+    }
+
+    .navbar-active .account{
+        justify-content: flex-start;
+        
+    }
+
+    .navbar-active .search-box{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-active .search-bar{
+        width: 60%;
+        
+    }
+
+    .navbar-active .btns{
+        width: 55%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-active .link-tabs{
+       display: grid;
+       grid-template-columns: repeat(4, minmax(0, 1fr));
+       justify-items: center;
+    }
+
+    .navbar-active .link-tabs a{
+        width: 60%;
+     }
+
+    .account .btns{
+        padding-right: 1rem;
+    }
+
+    .account .btns .btn{
+        font-size: 0.8rem;
+    }
+
+
+
     .logo img{
         width: 7rem;
         height: 7rem;
+    }
+
+    header{
+        height: auto;
+        padding-bottom: 2rem;
     }
 
     .heading{

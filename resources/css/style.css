@@ -179,12 +179,16 @@ body{
 }
 
 .search-bar:focus{
-    outline: none;
+    outline: 4px solid var(--nude);
+}
+
+.navbar-active .search-bar:focus{
+    outline: 3px solid var(--black);
 }
 
 
-.account .btn:last-child{
-    margin-right: 5rem;
+.account .btns{
+    padding-right: 2rem;
 }
 
 /* ------------HEADER--------------- */

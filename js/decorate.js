@@ -50,6 +50,7 @@ autoSlider()
 function mobile(){
     navbar.classList.add('navbar-mobile')
     navbar.classList.remove('navbar')
+    playAnimation = false
 }
 
 
@@ -67,6 +68,7 @@ window.onresize = () =>{
     }else{
         navbar.classList.add('navbar')
         navbar.classList.remove('navbar-mobile')
+        playAnimation = true
     }
 }
 
