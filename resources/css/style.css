@@ -26,6 +26,10 @@ body{
     overflow-x: hidden;
 }
 
+.newbody{
+    overflow: hidden;
+}
+
 /* -----------NAV BAR-------------- */
 #menu-box{
     display: none;
@@ -224,6 +228,7 @@ header{
     text-transform: uppercase;
     font-size: 9rem;
     background: -webkit-linear-gradient(0deg,var(--nude),var(--black));
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -488,7 +493,7 @@ section{
 .menu{
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .menu::before{
@@ -523,7 +528,6 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     width: 70%;
     background: linear-gradient(#d7c0ae86,#d7c0ae86),url('/FoodOrderWebsite/resources/images/food-card.png');
     background-size: contain;
@@ -543,11 +547,17 @@ section{
     width: 14.5rem;
 }
 
-.food-container{
+/* .food-container{
    width: 15rem;
    height: 15rem;
     align-self: center;
+} */
+
+.food-container {
+    width:100%;
+    align-self: center;
 }
+  
 
 .food-image{
     width: 100%;
@@ -577,6 +587,7 @@ section{
 
 
 .food-card h3{
+    text-transform: uppercase;
     margin-top: 1rem;
     font-weight: 500;
     font-size: 1.4rem;
@@ -893,6 +904,7 @@ footer{
 }
 
 .footbar{
+    position: static;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -901,7 +913,7 @@ footer{
     font-size: 1rem;
     background-color: black;
     color: white;
-    z-index: 3;
+    z-index: 5;
 }
 
 /* ---------------ANIMATION------------ */

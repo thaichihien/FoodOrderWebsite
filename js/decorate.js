@@ -12,7 +12,7 @@ var playAnimation = true
 
 
 const inforSection = 400
-const reviewSection = 3290
+const reviewSection = 2840
 
 
 
@@ -79,7 +79,7 @@ window.onresize = () =>{
 
 
 window.onscroll = () =>{
-    
+    //console.log(document.documentElement.scrollTop)
     if(document.body.scrollTop >limitNavbar || document.documentElement.scrollTop > limitNavbar){
         navbar.classList.add('navbar-active')
     }

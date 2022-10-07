@@ -614,10 +614,10 @@
         grid-template-columns: auto;
     }
 
-    .food-container{
+    /* .food-container{
         width: 18rem;
         height: 18rem;
-    }
+    } */
 
     .food-card h2::after{
         bottom: 9.8rem;
@@ -791,10 +791,10 @@
         width: 80%;
     }
 
-    .food-container{
+    /* .food-container{
         width: 14rem;
         height: 14rem;
-    }
+    } */
 
     .food-card:hover h2::after{
         width: 15rem;
