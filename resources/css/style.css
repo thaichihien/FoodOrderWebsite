@@ -30,6 +30,16 @@ body{
     overflow: hidden;
 }
 
+-moz-selection { /* Code for Firefox */
+    color: #52423d;
+    background: #d2bf97;
+  }
+  
+  ::selection {
+    color: #52423d;
+    background: #d2bf97;
+  }
+
 /* -----------NAV BAR-------------- */
 #menu-box{
     display: none;
