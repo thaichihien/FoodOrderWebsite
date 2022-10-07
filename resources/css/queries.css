@@ -360,8 +360,8 @@
     }
 
     .send-btn{
-        bottom: 1.5rem;
-        right: 2rem;
+        top: 60%;
+        right: 5%;
     }
 
     .contact-form input{
@@ -397,7 +397,7 @@
     }
     
     .logo-mobile{
-        display: inline-block;
+        display: flex;
     }
 
     .navbar-btn{
@@ -523,7 +523,8 @@
     .left-header{
         width: 100%;
         height: auto;
-        padding: 5rem 0;
+        padding: 0rem 0rem;
+        padding-top: 3rem;
     }
 
     .heading{
@@ -580,7 +581,7 @@
     .infor-dashboard{
         grid-template-rows: auto auto auto;
         grid-template-columns: 100%;
-        height: 100vh;
+        height: auto;
         padding: 5rem 0;
     }
 
@@ -680,8 +681,9 @@
         font-size: 18px;
     }
 
+
     .heading{
-        margin-top: 10rem;
+        margin-top: 0rem;
         margin-left: 2rem;
         width: 80%;
     }
@@ -698,13 +700,6 @@
         font-size: 1.8rem;        
     }
 
-    .logo-mobile{
-        width: 10rem;
-        height: 10rem;
-        top: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
     .search-box{
         padding-right: 1rem;
@@ -727,7 +722,7 @@
     }
     
     header{
-        height: 160vh;
+        height: auto;
 
     }
     .heading .btns{
@@ -784,7 +779,7 @@
     }
     
     .infor-detail{
-        padding: 0rem 2rem;
+        padding: 6rem 2rem;
         height: 0rem;
     }
 
@@ -855,7 +850,7 @@
     }
 
     .send-btn{
-        bottom: 1.5rem;
+        top: 80%;
         right: 50%;
         transform: translateX(50%
         );
