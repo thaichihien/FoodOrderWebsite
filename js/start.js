@@ -1,4 +1,4 @@
-import mobile from './decorate.js'
+import {mobile} from './decorate.js'
 
 
 mobile()

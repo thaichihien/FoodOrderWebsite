@@ -459,8 +459,8 @@
         position: fixed;
         top: 1rem;
         right: 1rem;
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4rem;
+        height: 4rem;
         background-color: white;
         border: 3px solid var(--black);
         border-radius: 50%;

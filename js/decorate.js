@@ -15,6 +15,7 @@ const inforSection = 400
 const reviewSection = 2840
 
 
+mobile()
 
 function checkedLabels(btn){
     labelRadioBtns.forEach((el,index) =>{
